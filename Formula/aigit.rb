@@ -5,21 +5,21 @@
 class Aigit < Formula
   desc "Git but for AI agents."
   homepage "https://github.com/ReyNeill/aigit"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.3/aigit_0.1.3_darwin_amd64.tar.gz"
-      sha256 "e2fcd2338cc848d59a9082619b587215b204f33a93dbce80d92b45ac6f571174"
+      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.4/aigit_0.1.4_darwin_amd64.tar.gz"
+      sha256 "2ab2190ceb40adbf4e4688c381665c684aced6f71c2602350d6b74957f079815"
 
       def install
         bin.install "aigit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.3/aigit_0.1.3_darwin_arm64.tar.gz"
-      sha256 "6d7fa251555e807e3fec3a628940a1b28d614d5d4dbe921482d0be3535295f98"
+      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.4/aigit_0.1.4_darwin_arm64.tar.gz"
+      sha256 "046114481b2e574bd4bf9da122fa9724cb53279b9e37c443cbbd5a7e41f0d303"
 
       def install
         bin.install "aigit"
@@ -29,15 +29,15 @@ class Aigit < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.3/aigit_0.1.3_linux_amd64.tar.gz"
-      sha256 "1ca0b9319e6b73e1e9f8337b60e96caf866a2f5da0f3c7b17f8f9814b861c5ee"
+      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.4/aigit_0.1.4_linux_amd64.tar.gz"
+      sha256 "5c030fcdcd9e1f8315d7613dc8086b47ba4bc4ce8f6cccd1752afb87f9f5b056"
       def install
         bin.install "aigit"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.3/aigit_0.1.3_linux_arm64.tar.gz"
-      sha256 "61cf0cde455931d598d597d4b67872217f33cc9dc8eab138ff16790008b10bfd"
+      url "https://github.com/ReyNeill/aigit/releases/download/v0.1.4/aigit_0.1.4_linux_arm64.tar.gz"
+      sha256 "63ef0c08d1ca14ab405222905acc88b58bd475b141007c1315dd486c9de1fdd1"
       def install
         bin.install "aigit"
       end
